@@ -10,6 +10,8 @@ dockerpath=hebronace/predictor
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login
+docker tag predictor $dockerpath
 
 # Step 3:
 # Push image to a docker repository
